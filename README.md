@@ -2,25 +2,9 @@
 
 All about the TypeScript programming language.
 
-## Installation
+## 1. [Installation](./docs/INSTALLATION.md)
 
-```bash
-# Make sure you have Node.js installed.
-node --version
-v16.13.0
-npm --version
-8.1.0
-npx --version
-8.1.0
-
-# Initalize the project.
-npm init -y
-
-# Node.JS packages are std ways to develop both frontend and backend using JavaScript.
-# As we use TypeScript, we need to install TypeScript.
-# Install TypeScript
-npm i typescript
-```
+## 2. [Types](./docs/TYPES.md)
 
 ## References
 
