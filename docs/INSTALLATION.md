@@ -30,7 +30,7 @@ tsc -v
 Version 4.6.4
 # This will create a "tsconfig.json" file in the root of the project.
 # It's used to store the TypeScript compiler options.
-npx tsc --init --rootdir src --outdir lib
+npx tsc --init --rootdir src --outdir dist
 ```
 
 ## Run
@@ -42,5 +42,5 @@ npx tsc --watch
 # The --watch flag will automatically compile the TypeScript files as they are changed.
 
 # Run the index.js file within the lib folder.
-node .\lib\index.js
+node dist/index.js
 ```
