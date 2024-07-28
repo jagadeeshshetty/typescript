@@ -5,12 +5,26 @@
   "version": "0.2.0",
   "configurations": [
     {
+      // Specifies that this configuration is for Node.js.
       "type": "node",
+      // Indicates that you want to launch the program.
       "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/helloworld.ts",
+      // A friendly name for this configuration.
+      "name": "Launch TypeScript",
+      // Skips Node.js internal files during debugging.
+      "skipFiles": ["<node_internals>/**"],
+      // Specifies the entry point of your application. Adjust this path to point to your main TypeScript file.
+      "args": [
+        "${workspaceFolder}/src/index.ts"
+      ],
+      // Ensures TypeScript files are compiled before launching the program. This assumes you have a corresponding task in your tasks.json.
       "preLaunchTask": "tsc: build - tsconfig.json",
-      "outFiles": ["${workspaceFolder}/out/**/*.js"]
+      // Specifies the location of the compiled JavaScript files.
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      // Enables source maps for debugging TypeScript.
+      "sourceMaps": true,
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"]
     }
   ]
 }

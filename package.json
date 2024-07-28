@@ -8,16 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jagadeeshshetty/ts.git"
+    "url": "git+https://github.com/jagadeeshshetty/typescript.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jagadeeshshetty/ts/issues"
+    "url": "https://github.com/jagadeeshshetty/typescript/issues"
   },
-  "homepage": "https://github.com/jagadeeshshetty/ts#readme",
-  "dependencies": {
-    "typescript": "^4.7.4"
+  "homepage": "https://github.com/jagadeeshshetty/typescript#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }
